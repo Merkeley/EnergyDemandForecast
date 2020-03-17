@@ -32,10 +32,12 @@ def main() :
         out_file = sys.argv[3]
 
     try :
-        df1 = pd.read_csv(in_file1)
-        df2 = pd.read_csv(in_file2)
+        df1 = pd.read_csv(in_file1, index_col=0)
+        df2 = pd.read_csv(in_file2, index_col=0)
+        '''
         df1.drop('Unnamed: 0', axis=1, inplace=True)
         df2.drop('Unnamed: 0', axis=1, inplace=True)
+        '''
         big_df = df1.merge(df2, how='inner', left_on='time', right_on='time')
         big_df.to_csv(out_file)
     except :
