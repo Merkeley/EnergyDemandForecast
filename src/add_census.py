@@ -32,7 +32,7 @@ def main() :
         state_abrev = sys.argv[2]
 
     try :
-        df1 = pd.read_csv(in_file1)
+        df1 = pd.read_csv(in_file1, index_col=0)
     except :
         raise
 
