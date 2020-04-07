@@ -162,6 +162,7 @@ def main() :
                                 time_list.append(time.timestamp())
                                 last_str_date = str_date
 
+                        '''
                         for city in location_dict :
                             big_time_list = []
                             big_temp_list = []
@@ -171,8 +172,8 @@ def main() :
                                     str(day).split('.')[0],
                                     location_dict[city][0],
                                     location_dict[city][1])
-                                big_time_list.extend(hour_list)
                                 big_temp_list.extend(temp_list)
+                                big_time_list.extend(hour_list)
 
                             temp_data[city] = big_temp_list
 
@@ -180,14 +181,17 @@ def main() :
                             [dt.datetime.fromtimestamp(x, tz=dt.timezone.utc) 
                                 for x in big_time_list]
                         temp_df = pd.DataFrame(temp_data)
+                        '''
 
                         # Save the data to csv files
                         demand_df.to_csv('elec_demand.csv')
-                        temp_df.to_csv('temp_data.csv')
+                        # temp_df.to_csv('temp_data.csv')
 
                         # Join the two tables
+                        '''
                         big_df = demand_df.merge(temp_df, how='inner',
                             left_on='time', right_on='time')
+                        '''
 
         if 'data' in js.keys() :
            print('Data Len: ', len(js['data']))
