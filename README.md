@@ -6,7 +6,7 @@ Demand forecasting is one of the more challenging operations task for any busine
 
 Historically, regression based and causal models provided better accuracy than statistical models but were expensive to implement.  With recent advances in AI and Machine Learning this may no longer be the case.
 
->[Sound predictions of demands and trends are no longer luxury items, but a necessity, if managers are to cope with seasonality, sudden changes in demand levels, price-cutting maneuvers of the competition, strikes, and large swings of the economy. - **Harvard Business Review, 'How to Choose The Right Forecasting Technique'](https://hbr.org/1971/07/how-to-choose-the-right-forecasting-technique)**
+>[Sound predictions of demands and trends are no longer luxury items, but a necessity, if managers are to cope with seasonality, sudden changes in demand levels, price-cutting maneuvers of the competition, strikes, and large swings of the economy. - *[Harvard Business Review, 'How to Choose The Right Forecasting Technique'](https://hbr.org/1971/07/how-to-choose-the-right-forecasting-technique)*
 
 However, time series modeling is a different animal than most Machine Learning modeling techniques.  Many machine learning models assume that samples are independent from each other.  Most time dependent processes are autoregressive, meaning the state of the process at any time is a function of what came before it.  For physical processes, changes in state are limited by the laws of physics.  While general business processes aren't subject to the laws of physics they rarely make radical abrupt changes.
 
