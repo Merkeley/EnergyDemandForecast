@@ -1,4 +1,4 @@
-# Electricity Demand Forecasting
+<h1 align=center> Electricity Demand Forecasting</h1>
 
 ## Demand Forecasting
 
