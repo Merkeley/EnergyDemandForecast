@@ -2,7 +2,7 @@
 
 ## Demand Forecasting
 
-Demand forecasting is one of the more challenging operations task for any business and yet it is critically important input for most the the operations planning.  Short term forecasts are used for labor management and supply chain planning.  Long term forecasts are used for capital planning and long term budgeting decissions.
+Demand forecasting is one of the more challenging task for any business and yet it is critically important input for most the the operations planning.  Short term forecasts are used for labor management and supply chain planning.  Long term forecasts are used for capital planning and long term budgeting decissions.
 
 Historically, regression based and causal models provided better accuracy than statistical models but were expensive to implement.  With recent advances in AI and Machine Learning this may no longer be the case.
 
@@ -12,7 +12,7 @@ However, time series modeling is a different animal than most Machine Learning m
 
 Intuitively, we might propose projecting the current state of business into the future for planning.  We might also consider trends, seasonaly averages and marketing activities in our projections.  Fortunately, there are several Machine Learning models that can incorporate all these features in an automated way.
 
-SARIMAX is a commonly used time series modeling technique.  SARIMAX stands for Seasonal Autoregressive Integrating Moving Average with Exogenous data (yes, that's a mouthful).  If you're interested in the math for this model you can find the basic equations described [here](./Notes/SARIMAX_Equation_Notes.md).  In short, SARIMAX uses a combination of the process state at previous time steps, the modeling error at those time steps, past seasonal components and inputs that are related to the main variable of interest (exogenous data) to predict future values.  SARIMAX is a general time series forecasting model and any business cycle 'awareness' must be included in the model configuration by the analyst or data scientist.
+SARIMAX is a commonly used time series modeling technique.  SARIMAX stands for Seasonal Autoregressive Integrating Moving Average with Exogenous data (yes, that's a mouthful).  If you're interested in the math for this model you can find the basic equations described [here](./Notes/SARIMAX_Equation_Notes.pdf).  In short, SARIMAX uses a combination of the process state at previous time steps, the modeling error at those time steps, past seasonal components and inputs that are related to the main variable of interest (exogenous data) to predict future values.  SARIMAX is a general time series forecasting model and any business cycle 'awareness' must be included in the model configuration by the analyst or data scientist.
 
 Recently, engineers at Facebook developed a forecasting Machine Learn model that was designed specifically to forecast for normal business cycles.  A publication describing the model development can be found [here](
 https://peerj.com/preprints/3190/).  Acknowledging that there are typically weekly, monthly and yearly business cycles the model uses mathmatical transformations to identify those fluctuations.  The model also accomodates exogenous data and has a built in system for handling semi-periodic events like holidays.
