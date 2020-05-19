@@ -2,7 +2,7 @@
 
 ## Demand Forecasting
 
-Demand forecasting is one of the more challenging task for any business and yet it is critically important input for most the the operations planning.  Short term forecasts are used for labor management and supply chain planning.  Long term forecasts are used for capital planning and long term budgeting decissions.
+Demand forecasting is one of the more challenging tasks for any business and yet it is critically important input for most the the operations planning.  Short term forecasts are used for labor management and supply chain planning.  Long term forecasts are used for capital planning and long term budgeting decissions.
 
 Historically, regression based and causal models provided better accuracy than statistical models but were expensive to implement.  With recent advances in AI and Machine Learning this may no longer be the case.
 
